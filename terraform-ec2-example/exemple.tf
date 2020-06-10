@@ -62,7 +62,7 @@ resource "aws_instance" "my-terraform-instance" {
     Name    = "Testing-Instance"
   }
 }
-
-output "ip" {
-  value = aws_instance.m-terraform-instance.private_ip
+# an output variable that will be displayed when you apply configurations like end points ip ...
+output "ami" {
+  value = aws_instance.my-terraform-instance.ami
 }
